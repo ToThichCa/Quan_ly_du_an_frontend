@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import { Redirect, Route, Switch } from 'react-router-dom';
+import UserRegistration from '../containers/System/Admin/UserRegistration';
+import manageManager from '../containers/System/Admin/manageManager';
 import UserManage from '../containers/System/UserManage';
-import UserRegistration from '../containers/System/UserRegistration';
-
 class System extends Component {
     render() {
         const { systemMenuPath } = this.props;
@@ -13,7 +13,7 @@ class System extends Component {
                     <Switch>
                         <Route path="/system/user-manage" component={UserManage} />
                         <Route path="/system/user-registration" component={UserRegistration} />
-            
+                        <Route path="/system/manage-manager" component={manageManager} />                   
                         <Route component={() => { return (<Redirect to={systemMenuPath} />) }} />
                     </Switch>
                 </div>

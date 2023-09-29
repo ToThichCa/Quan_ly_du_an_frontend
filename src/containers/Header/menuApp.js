@@ -1,6 +1,6 @@
 export const adminMenu = [
     { //quản lý người dùng
-        name: 'menu.admin.manage-user', 
+        name: 'menu.admin.manage-user',
         menus: [
             
                 {
@@ -10,7 +10,7 @@ export const adminMenu = [
                     name: 'menu.admin.crud-redux', link: '/system/user-registration' 
                 },
                 {
-                name: 'menu.admin.manage-manager', link: '/system/user-manager'
+                    name: 'menu.admin.manage-manager', link: '/system/manage-manager'
                 },
                 {
                     name: 'menu.admin.manage-admin', link: '/system/user-admin'
@@ -33,6 +33,15 @@ export const adminMenu = [
                 menus:[
                     {
                         name:'menu.admin.manage-project', link:'/system/manage-project'
+                    },
+                    {
+                        name:'menu.admin.manage-calendar', link:'/system/manage-calendar'
+                    },
+                    {
+                        name:'menu.admin.manage-KPI', link:'/system/manage-KPI'
+                    },
+                    {
+                        name:'menu.admin.manage-timekeeping', link:'/system/manage-timekeeping'
                     },
                 ]
             }
